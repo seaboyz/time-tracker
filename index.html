@@ -1,80 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Time Tracker</title>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="user card">
+					<div class="header">
+						<img src="./images/image-jeremy.png" alt="" class="hero" />
+						<div class="name">
+							<p>Report for</p>
+							<h1>Jeremy Robson</h1>
+						</div>
+					</div>
+					<div class="content">
+						<ul>
+							<li>Daily</li>
+							<li class="selected">Weekly</li>
+							<li>Monthly</li>
+						</ul>
+					</div>
+				</div>
+				<div class="activity work card">
+					<div class="content">
+						<h1>Work<span>···</span></h1>
+						<div class="record">
+							<p class="hours">32hrs</p>
+							<p class="last">Last Week - 36hrs</p>
+						</div>
+					</div>
+				</div>
+				<div class="activity play card">
+					<div class="content">
+						<h1>Play<span>···</span></h1>
+						<div class="record">
+							<p class="hours">10hrs</p>
+							<p class="last">Last Week - 8hrs</p>
+						</div>
+					</div>
+				</div>
+				<div class="activity study card">
+					<div class=" content">
+						<h1>Study<span>···</span></h1>
+						<div class="record">
+							<p class="hours">4hrs</p>
+							<p class="last">Last Week - 4hrs</p>
+						</div>
+					</div>
+				</div>
+				<div class="activity exercise card">
+					<div class=" content">
+						<h1>Exercise<span>···</span></h1>
+						<div class="record">
+							<p class="hours">4hrs</p>
+							<p class="last">Last Week - 5hrs</p>
+						</div>
+					</div>
+				</div>
+				<div class="activity social card">
+					<div class=" content">
+						<h1>Social<span>···</span></h1>
+						<div class="record">
+							<p class="hours">5hrs</p>
+							<p class="last">Last Week - 10hrs</p>
+						</div>
+					</div>
+				</div>
+				<div class="activity self-care card">
+					<div class=" content">
+						<h1>Self Care<span>···</span></h1>
+						<div class="record">
+							<p class="hours">2hrs</p>
+							<p class="last">Last Week - 2hrs</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
